@@ -179,6 +179,7 @@ https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libp/libpc
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libp/libpng1.6/libpng16-16_1.6.37-3_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libp/libpng1.6/libpng-dev_1.6.37-3_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libp/libpsl/libpsl5_0.21.0-1.1_amd64.deb
+https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libp/libpsl/libpsl-dev_0.21.0-1.1_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libp/libpthread-stubs/libpthread-stubs0-dev_0.4-1_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libr/librest/librest-0.7-0_0.8.1-1.1_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libs/libseccomp/libseccomp2_2.5.1-1_amd64.deb
@@ -190,6 +191,7 @@ https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libs/libse
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libs/libsm/libsm6_1.2.3-1_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libs/libsndfile/libsndfile1_1.0.30-1_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libs/libsoup2.4/libsoup2.4-1_2.72.0-2_amd64.deb
+https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libs/libsoup2.4/libsoup2.4-dev_2.72.0-2_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libs/libsoup2.4/libsoup-gnome2.4-1_2.72.0-2_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libs/libssh2/libssh2-1_1.9.0-2_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/libt/libtasn1-6/libtasn1-6_4.16.0-2_amd64.deb
@@ -349,6 +351,7 @@ https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/s/speech-d
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/s/speech-dispatcher/libspeechd-dev_0.10.2-2_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/s/speech-dispatcher/speech-dispatcher_0.10.2-2_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/s/sqlite3/libsqlite3-0_3.34.0-1_amd64.deb
+https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/s/sqlite3/libsqlite3-dev_3.34.0-1_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/s/systemd/libsystemd0_247.2-4_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/s/systemd/libudev1_247.2-4_amd64.deb
 https://snapshot.debian.org/archive/debian/20210115T203459Z/pool/main/s/systemd/libudev-dev_247.2-4_amd64.deb

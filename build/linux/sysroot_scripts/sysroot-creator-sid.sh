@@ -268,6 +268,7 @@ DEBIAN_PACKAGES="\
   libpng-dev
   libpng16-16
   libpsl5
+  libpsl-dev
   libpthread-stubs0-dev
   libpulse-dev
   libpulse-mainloop-glib0
@@ -289,10 +290,12 @@ DEBIAN_PACKAGES="\
   libsndfile1
   libsoup-gnome2.4-1
   libsoup2.4-1
+  libsoup2.4-dev
   libspa-0.2-dev
   libspeechd-dev
   libspeechd2
   libsqlite3-0
+  libsqlite3-dev
   libssh2-1
   libssl-dev
   libssl1.1
