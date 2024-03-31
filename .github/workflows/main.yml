@@ -5,15 +5,14 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    continue-on-error: true
 
     strategy:
       matrix:
-        arch: ['arm64', 'armhf', 'armel', 'amd64', 'i386']
+        arch: ['arm64', 'armhf', 'armel', 'amd64', 'i386', 'mipsel', 'mips64el']
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install Deps
       run: sudo apt install -y binutils-arm-linux-gnueabi binutils-arm-linux-gnueabihf binutils-mips64el-linux-gnuabi64 binutils-mipsel-linux-gnu
@@ -21,9 +20,38 @@ jobs:
     - name: Build
       run: ./build/linux/sysroot_scripts/sysroot-creator.sh build ${{ matrix.arch }}
 
-    - name: Release
-      uses: softprops/action-gh-release@v0.1.14
-      if: startsWith(github.ref, 'refs/tags/')
+    - name: Upload
+      uses: actions/upload-artifact@v4
       with:
-        draft: true
-        files: out/sysroot-build/bullseye/*_sysroot.tar.xz
+        name: sysroot-${{ matrix.arch }}
+        path: out/sysroot-build/bullseye/*_sysroot.tar.xz
+        retention-days: 1
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: [build]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Files
+        uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+          path: out/sysroot-build/bullseye
+
+      - name: Generate sysroots.json
+        env:
+          SKIP_SYSROOT_BUILD: true
+        run: |
+          python build/linux/sysroot_scripts/build_and_upload.py
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          files: |
+            build/linux/sysroot_scripts/sysroots.json
+            out/sysroot-build/bullseye/*_sysroot.tar.xz
